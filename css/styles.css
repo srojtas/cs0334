@@ -1,0 +1,20 @@
+#mainContent {
+    align-content: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+body {
+    background-color: #000000;
+}
+
+h1, h2 {
+    font-family: 'Dosis', sans-serif;
+}
+
+#firstLineOfP {
+    padding-top: 5px;
+}
