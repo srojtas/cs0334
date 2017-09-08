@@ -18,3 +18,7 @@ h1, h2 {
 #firstLineOfP {
     padding-top: 5px;
 }
+
+p {
+    font-size: 20px;
+}
