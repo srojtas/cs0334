@@ -11,5 +11,6 @@
     <div class="tipArea">
         <?php readfile("tips.txt");?>
     </div>
+    <p><a href="https://github.com/srojtas/cs0334/tree/master/lab3">Source Code</a></p>
 </body>
 </html>
