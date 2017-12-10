@@ -1,0 +1,1 @@
+INSERT INTO `srojtas001_cs334lab9`.`userInfo` (`userID`, `lastName`, `firstName`, `street1`, `street2`, `city`, `state`, `zip`, `country`, `email`, `homephone`, `facebookurl`, `cellphone`, `password`) VALUES ('1', 'Rojtas', 'Sascha', '10 Test Way', 'Apt 1', 'Pittsburgh', 'PA', '15132', 'US', 'rojtaszoo@pitt.edu', '(123) 456-7890', 'test', 'arn#F8W6m3', 'testword');

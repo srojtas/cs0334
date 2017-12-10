@@ -1,0 +1,1 @@
+INSERT INTO `srojtas001_cs334lab10`.`customers` (`userName`, `address`, `city`, `state`, `zip`, `country`, `firstName`, `lastName`) VALUES ('tester', '1 Test St', 'Pittsburgh', 'PA', '15132', 'US', 'Testing', 'User');

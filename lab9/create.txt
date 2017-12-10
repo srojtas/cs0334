@@ -1,0 +1,55 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+-- -----------------------------------------------------
+-- Schema srojtas001_cs334lab9
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema srojtas001_cs334lab9
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `srojtas001_cs334lab9` DEFAULT CHARACTER SET utf8 ;
+USE `srojtas001_cs334lab9` ;
+
+-- -----------------------------------------------------
+-- Table `srojtas001_cs334lab9`.`userInfo`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `srojtas001_cs334lab9`.`userInfo` (
+  `userID` INT NOT NULL AUTO_INCREMENT,
+  `lastName` VARCHAR(45) NULL,
+  `firstName` VARCHAR(45) NULL,
+  `street1` VARCHAR(45) NULL,
+  `street2` VARCHAR(45) NULL,
+  `city` VARCHAR(45) NULL,
+  `state` VARCHAR(45) NULL,
+  `zip` VARCHAR(45) NULL,
+  `country` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `homephone` VARCHAR(45) NULL,
+  `facebookurl` VARCHAR(45) NULL,
+  `cellphone` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  PRIMARY KEY (`userID`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `srojtas001_cs334lab9`.`users`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `srojtas001_cs334lab9`.`users` (
+  `ID` INT NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`ID`),
+  CONSTRAINT `ID`
+    FOREIGN KEY (`ID`)
+    REFERENCES `srojtas001_cs334lab9`.`userInfo` (`userID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
